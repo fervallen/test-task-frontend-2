@@ -1,0 +1,56 @@
+@import url('./styles/header.css');
+@import url('./styles/nav-bar.css');
+@import url('./styles/main.css');
+
+@font-face {
+    font-family: 'Tactic Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('./fonts/TacticSans-Bld.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Tactic Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('./fonts/TacticSans-Med.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'TTFirsNeue';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('./fonts/TTFirsNeue-DemiBold.woff2') format('woff2');
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Tactic Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    background-color: #000;
+    color: #FFF;
+    padding-bottom: 80px;
+}
+
+.ttf-neue {
+    font-family: 'TTFirsNeue', sans-serif;
+}
+
+.tektur {
+  font-family: 'Tektur', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+

@@ -1,0 +1,207 @@
+.nav-bar {
+    display: flex;
+}
+
+.nav-bar_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    height: 754px;
+    border: 1px solid #FFFFFF33;
+    border-left: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-bar_item-description {
+    display: none;
+    margin-top: 24px;
+    font-size: 18px;
+    line-height: 100%;
+    font-weight: 600;
+    text-transform: uppercase;
+    max-width: 280px;
+    text-align: center;
+}
+
+.nav-bar_item:hover .nav-bar_item-description {
+    display: block;
+}
+
+.nav-bar_item-plane:hover {
+    background-color: #192E2F;
+}
+
+.nav-bar_item-person:hover  {
+    background-color: #8E1F1F;
+}
+
+.nav-bar_item-bicycle:hover{
+    background-color: #511F8E;
+}
+
+.nav-bar_item-car:hover {
+    background-color: #C28412;
+}
+
+.nav-bar_item-sailboat:hover {
+    background-color: #3A8067;
+}
+
+.nav-bar_icon {
+    width: 160px;
+    height: 160px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.nav-bar_item-plane .nav-bar_icon {
+    background-image: url('../assets/plane.svg');
+}
+.nav-bar_item-plane:hover .nav-bar_icon {
+    background-image: url('../assets/plane-filled.svg');
+}
+.nav-bar_item-person .nav-bar_icon {
+    background-image: url('../assets/person.svg');
+}
+.nav-bar_item-person:hover .nav-bar_icon {
+    background-image: url('../assets/person-filled.svg');
+}
+.nav-bar_item-bicycle .nav-bar_icon {
+    background-image: url('../assets/bicycle.svg');
+}
+.nav-bar_item-bicycle:hover .nav-bar_icon {
+    background-image: url('../assets/bicycle-filled.svg');
+}
+.nav-bar_item-car .nav-bar_icon {
+    background-image: url('../assets/car.svg');
+}
+.nav-bar_item-car:hover .nav-bar_icon {
+    background-image: url('../assets/car-filled.svg');
+}
+
+.nav-bar_item-sailboat .nav-bar_icon {
+    background-image: url('../assets/sailboat.svg');
+}
+.nav-bar_item-sailboat:hover .nav-bar_icon {
+    background-image: url('../assets/sailboat-filled.svg');
+}
+
+.nav-bar-extra_item {
+    display: none;
+    height: 390px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-bar_item-plane:hover .extra-plane {
+    display: flex;
+}
+
+.nav-bar-extra .extra-plane {
+    background-color: #192E2F;
+}
+.nav-bar-extra .extra-person {
+    background-color: #8E1F1F;
+}
+.nav-bar-extra .extra-bicycle {
+    background-color: #511F8E;
+}
+.nav-bar-extra .extra-car {
+    background-color: #C28412;
+}
+.nav-bar-extra .extra-sailboat {
+    background-color: #3A8067;
+}
+
+.nav-bar-extra-description {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: -2%;
+    text-align: center;
+    max-width: 280px;
+    text-transform: uppercase;
+    margin-top: 24px;
+}
+
+.visible {
+    display: flex;
+}
+
+@media screen and (max-width: 1000px) {
+    .nav-bar_item:hover .nav-bar_item-description {
+        display: none;
+    }
+
+    .nav-bar_icon {
+        width: 48px;
+        height: 48px;
+        margin: 14px;
+    }
+
+    .nav-bar_item {
+        height: 78px;
+    }
+
+    .nav-bar_item-description {
+        display: none
+    }
+
+
+    .nav-bar_item-plane.active {
+        background-color: #192E2F;
+    }
+
+    .nav-bar_item-person.active {
+        background-color: #8E1F1F;
+    }
+
+    .nav-bar_item-bicycle.active {
+        background-color: #511F8E;
+    }
+
+    .nav-bar_item-car.active {
+        background-color: #C28412;
+    }
+
+    .nav-bar_item-sailboat.active {
+        background-color: #3A8067;
+    }
+}
+
+
+@media screen and (min-width: 1000px) {
+    .visible {
+        display: none;
+    }
+
+    .nav-bar_item-plane:hover {
+        flex: 3;
+    }
+    .nav-bar_item-person:hover {
+        flex: 3;
+    }
+    .nav-bar_item-bicycle:hover {
+        flex: 3;
+    }
+    .nav-bar_item-car:hover {
+        flex: 3;
+    }
+    .nav-bar_item-sailboat:hover {
+        flex: 3;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .nav-bar_icon {
+        width: 32px;
+        height: 32px;
+        margin: 8px;
+    }
+
+}
+

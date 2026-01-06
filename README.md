@@ -1,1 +1,2 @@
-# test-task-frontend-2
+### Frontend test task #2
+Quick layout task with hovers & svg icons

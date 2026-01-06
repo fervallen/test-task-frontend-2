@@ -1,0 +1,16 @@
+.header {
+    padding: 30px 40px;
+}
+
+.header_title {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: -2%;
+}
+
+@media screen and (max-width: 900px) {
+    .header {
+        padding: 24px;
+    }
+}
